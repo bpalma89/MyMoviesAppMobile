@@ -1,4 +1,4 @@
-# My Movies React Application
+# My Movies React Native Application
 
 ## Brief Intro
 
