@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { StyleSheet, View, Text, TextInput } from "react-native";
+import {
+  ActivityIndicator,
+  StyleSheet,
+  View,
+  Text,
+  TextInput,
+} from "react-native";
 import MovieCardList from "../components/movieCardList";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -45,7 +51,7 @@ const Search = ({ navigation }) => {
       </View>
       <View style={styles.contentContainer}>
         {isMovieServiceLoading ? (
-          <Text style={styles.text}>Loading...</Text>
+          <ActivityIndicator size="large" color="grey" />
         ) : Object.keys(movies).length > 0 ? (
           <MovieCardList movies={movies} navigation={navigation} />
         ) : (
