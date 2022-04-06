@@ -14,7 +14,7 @@ This is a small React Native based application based on another [existing applic
 
 4. Run `npm start` or `expo start` to start the project.
 
-5. Open [localhost:19002](localhost:19002) to open the Expo CLI Server where you can run the app through an emulator, in the browser or on your phone using Expo Client and reading the QR code.
+5. Open [http://localhost:19002/](http://localhost:19002/) to open the Expo Developer Tools where you can run the app through an emulator, in the browser or on your phone using Expo Client and reading the QR code.
 
 ## Used Libraries
 
