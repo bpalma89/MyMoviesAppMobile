@@ -18,6 +18,10 @@ This is a small React Native based application based on another [existing applic
 
 ## Used Libraries
 
+### Expo-CLI
+
+Expo CLI is a command line app that is the main interface between a developer and Expo tools. You'll use it for a variety of tasks, such as: Creating new projects. Developing your app: running the project server, viewing logs, opening your app in a simulator. [More Info](docs.expo.dev/workflow/expo-cli/)
+
 ### React Navigator
 
 React Navigation is built with JavaScript and lets you create components and navigation patterns that look and feel like truly native ones. React Navigation uses what's called a stack navigator to manage the navigation history and presentation of the appropriate screen based on the route taken by a user inside the app. [More Info](https://reactnavigation.org/)
