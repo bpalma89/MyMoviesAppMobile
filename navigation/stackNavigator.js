@@ -28,7 +28,7 @@ const MovieSearchStackNavigator = () => {
   return (
     <Stack.Navigator screenOptions={screenOptionStyle}>
       <Stack.Screen name="Search" component={Search} />
-      <Stack.Screen name="MovieDetails" component={MovieDetails} />
+      <Stack.Screen name="Movie Details - Search" component={MovieDetails} />
     </Stack.Navigator>
   );
 };
@@ -37,7 +37,7 @@ const MovieFavoritesStackNavigator = () => {
   return (
     <Stack.Navigator screenOptions={screenOptionStyle}>
       <Stack.Screen name="Favorites" component={Favorites} />
-      <Stack.Screen name="MovieDetails" component={MovieDetails} />
+      <Stack.Screen name="Movie Details - Favorites" component={MovieDetails} />
     </Stack.Navigator>
   );
 };
