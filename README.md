@@ -22,6 +22,10 @@ This is a small React Native based application based on another [existing applic
 
 React Navigation is built with JavaScript and lets you create components and navigation patterns that look and feel like truly native ones. React Navigation uses what's called a stack navigator to manage the navigation history and presentation of the appropriate screen based on the route taken by a user inside the app. [More Info](https://reactnavigation.org/)
 
+### React Paper
+
+React Native Paper is a high-quality, standard-compliant Material Design library that has you covered in all major use-cases.[More Info](https://callstack.github.io/react-native-paper/)
+
 ### Axios
 
 Axios is a promise-based HTTP Client for node.js and the browser. It is isomorphic (= it can run in the browser and nodejs with the same codebase). [More Info](https://axios-http.com/docs/intro)
