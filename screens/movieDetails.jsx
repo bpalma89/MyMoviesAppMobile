@@ -98,7 +98,8 @@ const MovieDetails = ({ route }) => {
 const styles = StyleSheet.create({
   movieTitle: {
     fontWeight: "bold",
-    fontSize: 30,
+    fontSize: 40,
+    textAlign: "center",
   },
   movieImage: {
     width: 400,
