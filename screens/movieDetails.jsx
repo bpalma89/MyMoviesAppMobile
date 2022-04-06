@@ -100,11 +100,12 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 40,
     textAlign: "center",
+    marginTop: 10,
   },
   movieImage: {
     width: 400,
     height: 600,
-    marginTop: 20,
+    marginTop: 10,
   },
   container: {
     flex: 1,
