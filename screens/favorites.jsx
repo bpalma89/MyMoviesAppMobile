@@ -14,7 +14,7 @@ const Favorites = ({ navigation }) => {
         {favorites.length > 0 ? (
           <MovieCardList movies={favorites} navigation={navigation} />
         ) : (
-          <Text>Found no favorites.</Text>
+          <Text style={styles.notFoundText}>Found no favorites.</Text>
         )}
       </View>
     </View>
@@ -25,6 +25,10 @@ const styles = StyleSheet.create({
   favoritesContainer: {
     width: "100%",
     marginTop: 10,
+  },
+  notFoundText: {
+    textAlign: "center",
+    marginTop: 20,
   },
 });
 
