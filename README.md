@@ -22,7 +22,7 @@ This is a small React Native based application based on another [existing applic
 
 React Navigation is built with JavaScript and lets you create components and navigation patterns that look and feel like truly native ones. React Navigation uses what's called a stack navigator to manage the navigation history and presentation of the appropriate screen based on the route taken by a user inside the app. [More Info](https://reactnavigation.org/)
 
-### React Paper
+### React Native Paper
 
 React Native Paper is a high-quality, standard-compliant Material Design library that has you covered in all major use-cases.[More Info](https://callstack.github.io/react-native-paper/)
 
@@ -46,6 +46,6 @@ The IMDb-API is a web service for receiving movie, serial and cast information. 
 
 Redux Thunk allows us to avoid directly causing side effects in our actions, action creators, or components. Potentially messy code can be isolated in a thunk, leaving the rest of the code uncluttered. Middleware can later invoke the thunk to actually execute that function. It was used in conjunction with Redux Persist to persist the data in our application, in this case, for our favorite movies.
 
-Redux Stack Navigator allows us to to transition between screens where each new screen is placed on top of a stack.
+React Navigation is built with JavaScript and lets you create components and navigation patterns that look and feel like truly native ones. React Navigation uses what's called a stack navigator to manage the navigation history and presentation of the appropriate screen based on the route taken by a user inside the app. We used it's tab navigator features to make navigation between screens easier.
 
 Axios was used to to make requests to a certain endpoint, in this case, the IMDb API in order to search for movies based on a keyword or fetch more details about them.
