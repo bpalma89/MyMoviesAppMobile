@@ -21,7 +21,6 @@ import { FontAwesome } from "react-native-vector-icons";
 const Search = ({ navigation }) => {
   const [searchText, setSearchText] = useState("");
   const movies = useSelector(getMovies);
-  console.log(movies);
   const dispatch = useDispatch();
 
   const searchHandler = () => {
