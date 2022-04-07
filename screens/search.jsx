@@ -77,6 +77,7 @@ const styles = StyleSheet.create({
     fontFamily: "Montserrat_400Regular",
   },
   contentContainer: {
+    marginTop: 10,
     width: "100%",
     flex: 1,
   },
