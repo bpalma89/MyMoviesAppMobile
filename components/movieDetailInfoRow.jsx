@@ -5,7 +5,7 @@ const MovieDetailRowInfo = ({ label, value }) => {
   return (
     <View style={styles.item}>
       <Text style={styles.label}>{label}</Text>
-      <Text>{value}</Text>
+      <Text style={styles.value}>{value}</Text>
     </View>
   );
 };
@@ -16,7 +16,10 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   label: {
-    fontWeight: "bold",
+    fontFamily: "Montserrat_700Bold",
+  },
+  value: {
+    fontFamily: "Montserrat_400Regular",
   },
 });
 

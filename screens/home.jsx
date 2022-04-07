@@ -16,15 +16,16 @@ const Home = () => {
 
 const styles = StyleSheet.create({
   homeTitle: {
-    fontWeight: "bold",
     fontSize: 40,
     marginTop: 20,
     textAlign: "center",
+    fontFamily: "Montserrat_700Bold",
   },
   homeParagraph: {
     fontSize: 20,
     marginTop: 20,
     textAlign: "center",
+    fontFamily: "Montserrat_400Regular",
   },
 });
 

@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
   notFoundText: {
     textAlign: "center",
     marginTop: 20,
+    fontFamily: "Montserrat_400Regular",
   },
 });
 

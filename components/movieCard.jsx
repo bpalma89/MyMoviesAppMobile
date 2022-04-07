@@ -12,7 +12,10 @@ const MovieCard = ({ movie, navigation }) => {
   return (
     <TouchableOpacity onPress={navigateToDetail}>
       <Card style={styles.card}>
-        <Card.Title title={movie.title} />
+        <Card.Title
+          title={movie.title}
+          titleStyle={{ fontFamily: "Montserrat_700Bold" }}
+        />
         <Card.Cover source={{ uri: imageUri }} />
       </Card>
     </TouchableOpacity>

@@ -14,6 +14,10 @@ const screenOptionStyle = {
   },
   headerTintColor: "white",
   headerBackTitle: "Back",
+  headerTitleAlign: "center",
+  headerTitleStyle: {
+    fontFamily: "Montserrat_700Bold",
+  },
 };
 
 const MainStackNavigator = () => {

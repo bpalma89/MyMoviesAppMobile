@@ -21,6 +21,7 @@ import { FontAwesome } from "react-native-vector-icons";
 const Search = ({ navigation }) => {
   const [searchText, setSearchText] = useState("");
   const movies = useSelector(getMovies);
+  console.log(movies);
   const dispatch = useDispatch();
 
   const searchHandler = () => {
@@ -69,6 +70,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     padding: 10,
     width: 300,
+    fontFamily: "Montserrat_400Regular",
   },
   contentContainer: {
     marginTop: 20,
@@ -83,6 +85,7 @@ const styles = StyleSheet.create({
   },
   text: {
     textAlign: "center",
+    fontFamily: "Montserrat_400Regular",
   },
 });
 

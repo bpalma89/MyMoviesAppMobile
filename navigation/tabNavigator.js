@@ -30,6 +30,9 @@ const BottomTabNavigator = () => {
         },
         tabBarActiveTintColor: "tomato",
         tabBarInactiveTintColor: "gray",
+        tabBarLabelStyle: {
+          fontFamily: "Montserrat_400Regular",
+        },
       })}
     >
       <Tab.Screen name="Home" component={MainStackNavigator} />
