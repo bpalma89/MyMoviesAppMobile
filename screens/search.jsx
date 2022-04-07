@@ -5,6 +5,8 @@ import {
   View,
   Text,
   TextInput,
+  TouchableWithoutFeedback,
+  Keyboard,
 } from "react-native";
 import MovieCardList from "../components/movieCardList";
 import { useDispatch, useSelector } from "react-redux";
@@ -25,6 +27,7 @@ const Search = ({ navigation }) => {
 
   const searchHandler = () => {
     dispatch(searchMoviesFromAPI(searchText));
+    Keyboard.dismiss();
   };
 
   useEffect(() => {
@@ -34,31 +37,33 @@ const Search = ({ navigation }) => {
   let isMovieServiceLoading = useSelector(getMoviesServiceStatus);
 
   return (
-    <View style={{ flex: 1 }}>
-      <View style={styles.actionsContainer}>
-        <TextInput
-          style={styles.input}
-          placeholder="Search movies"
-          onChangeText={setSearchText}
-          value={searchText}
-        />
-        <FontAwesome
-          size={30}
-          style={styles.searchButton}
-          onPress={searchHandler}
-          name="search"
-        />
+    <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
+      <View style={{ flex: 1 }}>
+        <View style={styles.actionsContainer}>
+          <TextInput
+            style={styles.input}
+            placeholder="Search movies"
+            onChangeText={setSearchText}
+            value={searchText}
+          />
+          <FontAwesome
+            size={30}
+            style={styles.searchButton}
+            onPress={searchHandler}
+            name="search"
+          />
+        </View>
+        <View style={styles.contentContainer}>
+          {isMovieServiceLoading ? (
+            <ActivityIndicator size="large" color="grey" />
+          ) : Object.keys(movies).length > 0 ? (
+            <MovieCardList movies={movies} navigation={navigation} />
+          ) : (
+            <Text style={styles.text}>Found no movies.</Text>
+          )}
+        </View>
       </View>
-      <View style={styles.contentContainer}>
-        {isMovieServiceLoading ? (
-          <ActivityIndicator size="large" color="grey" />
-        ) : Object.keys(movies).length > 0 ? (
-          <MovieCardList movies={movies} navigation={navigation} />
-        ) : (
-          <Text style={styles.text}>Found no movies.</Text>
-        )}
-      </View>
-    </View>
+    </TouchableWithoutFeedback>
   );
 };
 
