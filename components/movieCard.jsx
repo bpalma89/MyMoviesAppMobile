@@ -4,7 +4,7 @@ import { TouchableOpacity, StyleSheet } from "react-native";
 
 const MovieCard = ({ movie, navigation }) => {
   const navigateToDetail = () => {
-    navigation.navigate("MovieDetails", { id: movie.id });
+    navigation.navigate("Details", { id: movie.id });
   };
 
   return (

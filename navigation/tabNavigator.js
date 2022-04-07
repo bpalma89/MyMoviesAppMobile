@@ -21,14 +21,14 @@ const BottomTabNavigator = () => {
           if (route.name === "Home") {
             iconName = focused ? "home" : "home-outline";
           } else if (route.name === "Search") {
-            iconName = focused ? "search-outline" : "search";
+            iconName = focused ? "search" : "search-outline";
           } else if (route.name === "Favorites") {
             iconName = focused ? "star" : "star-outline";
           }
 
           return <Ionicons name={iconName} size={size} color={color} />;
         },
-        tabBarActiveTintColor: "tomato",
+        tabBarActiveTintColor: "#555555",
         tabBarInactiveTintColor: "gray",
         tabBarLabelStyle: {
           fontFamily: "Montserrat_400Regular",
