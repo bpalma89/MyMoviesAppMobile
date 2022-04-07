@@ -3,8 +3,6 @@ import { Card } from "react-native-paper";
 import { TouchableOpacity, StyleSheet } from "react-native";
 
 const MovieCard = ({ movie, navigation }) => {
-  const imageUri = movie.image;
-
   const navigateToDetail = () => {
     navigation.navigate("MovieDetails", { id: movie.id });
   };
@@ -16,7 +14,7 @@ const MovieCard = ({ movie, navigation }) => {
           title={movie.title}
           titleStyle={{ fontFamily: "Montserrat_700Bold" }}
         />
-        <Card.Cover source={{ uri: imageUri }} />
+        <Card.Cover source={{ uri: movie.image }} />
       </Card>
     </TouchableOpacity>
   );
@@ -25,7 +23,7 @@ const MovieCard = ({ movie, navigation }) => {
 const styles = StyleSheet.create({
   card: {
     width: "100%",
-    marginTop: 20,
+    marginVertical: 10,
   },
 });
 
